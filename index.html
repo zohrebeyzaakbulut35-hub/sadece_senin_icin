@@ -1,295 +1,142 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Eren'e Özel 🤍</title>
+<title>Bebeğim 🤍</title>
 
 <style>
-
-*{
-box-sizing:border-box;
-}
-
 body{
 margin:0;
 height:100vh;
-font-family:'Arial', sans-serif;
-background:linear-gradient(135deg,#ffd6e7,#ffc0cb);
-overflow:hidden;
-color:#7a2d4d;
+background:#ffd6e7;
+font-family:Arial,sans-serif;
 display:flex;
 justify-content:center;
 align-items:center;
+text-align:center;
+color:#8b3155;
 }
 
+.kalp{
+position:absolute;
+font-size:20px;
+}
+
+.kutu{
+width:90%;
+max-width:450px;
+}
 
 .sayfa{
-
 display:none;
-width:90%;
-max-width:500px;
-text-align:center;
-animation:acilis .8s ease;
-
 }
-
 
 .aktif{
 display:block;
 }
 
-
-@keyframes acilis{
-
-from{
-opacity:0;
-transform:translateY(20px);
-}
-
-to{
-opacity:1;
-transform:translateY(0);
-}
-
-}
-
-
-h1{
-
-font-size:34px;
-
-}
-
-
-p{
-
-font-size:19px;
-line-height:1.7;
-
-}
-
-
 button{
-
 background:white;
 border:none;
 padding:15px 35px;
-border-radius:40px;
+border-radius:30px;
+color:#d45a8a;
 font-size:18px;
-color:#d35b88;
-cursor:pointer;
 margin-top:20px;
-
 }
 
-
-button:hover{
-
-transform:scale(1.05);
-
+.zarf{
+font-size:90px;
+cursor:pointer;
 }
-
-
-.kalp{
-
-position:absolute;
-font-size:18px;
-color:#ff7ca8;
-
-}
-
-
-.k1{left:15%;top:20%}
-.k2{left:80%;top:25%}
-.k3{left:25%;top:75%}
-.k4{left:70%;top:70%}
-.k5{left:50%;top:15%}
-.k6{left:10%;top:55%}
-.k7{left:88%;top:60%}
-.k8{left:45%;top:85%}
-
-
-
-.spotify{
-
-border-radius:15px;
-overflow:hidden;
-margin-top:25px;
-
-}
-
 
 </style>
 
 </head>
 
-
 <body>
 
-
-<div class="kalp k1">♡</div>
-<div class="kalp k2">♡</div>
-<div class="kalp k3">♡</div>
-<div class="kalp k4">♡</div>
-<div class="kalp k5">♡</div>
-<div class="kalp k6">♡</div>
-<div class="kalp k7">♡</div>
-<div class="kalp k8">♡</div>
-
+<div class="kalp" style="left:15%;top:20%">♡</div>
+<div class="kalp" style="left:80%;top:25%">♡</div>
+<div class="kalp" style="left:25%;top:75%">♡</div>
+<div class="kalp" style="left:70%;top:70%">♡</div>
+<div class="kalp" style="left:50%;top:15%">♡</div>
+<div class="kalp" style="left:10%;top:55%">♡</div>
+<div class="kalp" style="left:88%;top:60%">♡</div>
+<div class="kalp" style="left:45%;top:85%">♡</div>
 
 
-<!-- SAYFA 1 -->
-
-<div id="sayfa1" class="sayfa aktif">
+<div class="kutu">
 
 
-<h1>
-Bebeğim, bunu senin için hazırladım…
-</h1>
+<div id="s1" class="sayfa aktif">
 
+<h1>Bebeğim, bunu senin için hazırladım…</h1>
 
 <p>
 Umarım sonuna kadar okursun 🤍
 </p>
 
-
-<button onclick="sayfaDegistir(2)">
+<button onclick="gec(2)">
 Başla
 </button>
 
-
-<div style="display:flex;justify-content:center;gap:10px;flex-wrap:wrap;">
-
-<img src="foto1.jpg" style="
-width:120px;
-height:120px;
-object-fit:cover;
-border-radius:20px;
-">
-
-<img src="foto2.jpg" style="
-width:120px;
-height:120px;
-object-fit:cover;
-border-radius:20px;
-">
-
-<img src="foto3.jpg" style="
-width:120px;
-height:120px;
-object-fit:cover;
-border-radius:20px;
-">
-
 </div>
 
 
 
+<div id="s2" class="sayfa">
 
-
-<!-- SAYFA 2 -->
-
-<div id="sayfa2" class="sayfa">
-
-
-<h1>
-🎧 Önce bunu dinlemeni istiyorum...
-</h1>
-
+<h1>🎧</h1>
 
 <p>
-Belki anlatamadığım bazı şeyleri bu şarkı anlatır.
+Önce bunu dinlemeni istiyorum...
 </p>
 
-
-
-<div class="spotify">
-
-<iframe
-style="border-radius:12px"
-src="https://open.spotify.com/embed/album/7mTScMsjKzubBs9sTldQN5"
-width="100%"
-height="200"
-frameBorder="0"
-allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
-
-</iframe>
-
-
-</div>
-
-
-<p>
-Dinledikten sonra devam edebilirsin 🤍
-</p>
-
-
-<button onclick="sayfaDegistir(3)">
-Devam et 💌
+<button onclick="gec(3)">
+Devam et
 </button>
 
-
-</div><!-- SAYFA 3 -->
-
-<div id="sayfa3" class="sayfa">
+</div>
 
 
-<h1>
-💌 Sana bir mektup var
-</h1>
 
+
+<div id="s3" class="sayfa">
+
+<h1>💌</h1>
 
 <p>
-Açmak için zarfa dokun 🤍
+Sana bir mektup var
 </p>
 
-
-<div onclick="sayfaDegistir(4)" style="
-font-size:90px;
-cursor:pointer;
-">
-💌
+<div class="zarf" onclick="gec(4)">
+✉️
 </div>
-
 
 </div>
 
 
 
 
+<div id="s4" class="sayfa">
 
-<!-- SAYFA 4 -->
-
-<div id="sayfa4" class="sayfa">
-
-
-<h1>
-Eren,
-</h1>
-
+<h1>Eren,</h1>
 
 <p>
 
 Bazen istemeden birbirimizi kırabiliyoruz.
+
+<br><br>
+
 Bu yaşadığımız şey için gerçekten üzgünüm.
-Seni üzmek, kırmak ya da kötü hissettirmek gerçekten hiç istemedim.
+Seni üzmek ya da kırmak hiç istemedim.
 
 <br><br>
 
-Belki her zaman doğru şekilde anlatamıyorum ama seni önemsiyorum.
-Sen ne kadar tersini düşünsen de hatalarımın farkına varıp daha iyi olmaya çalışıyorum.
-
-<br><br>
-
-Aramızdaki güzel şeylerin bir kavgadan daha değerli olduğunu düşünüyorum.
-Seni kaybetmek istemiyorum canımın içi.
-
-<br><br>
-
-Beni dinlediğin, yanımda olduğun ve bana verdiğin değer için teşekkür ederim.
+Seni önemsiyorum ve hatalarımın farkına varıp daha iyi olmaya çalışıyorum.
 
 <br><br>
 
@@ -298,152 +145,48 @@ Seni seviyorum 🤍
 
 </p>
 
-
-<button onclick="sayfaDegistir(5)">
-Anılarımıza bak 🤍
+<button onclick="gec(5)">
+Son
 </button>
 
-
-</div><!-- SAYFA 5 -->
-
-<div id="sayfa5" class="sayfa">
+</div>
 
 
-<h1>
-📸 Anılarımız
-</h1>
 
+
+<div id="s5" class="sayfa">
+
+<h1>🤍</h1>
 
 <p>
-Bizden kalan güzel anılar burada olacak 🤍
-</p>
-
-
-<div style="display:flex;justify-content:center;gap:10px;flex-wrap:wrap;">
-
-<div style="
-width:120px;
-height:120px;
-background:white;
-border-radius:20px;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:40px;
-">
-📷
-</div>
-
-
-<div style="
-width:120px;
-height:120px;
-background:white;
-border-radius:20px;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:40px;
-">
-📷
-</div>
-
-
-<div style="
-width:120px;
-height:120px;
-background:white;
-border-radius:20px;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:40px;
-">
-📷
-</div>
-
-
-</div>
-
-
-<p>
-Fotoğraflarımızı buraya ekleyeceğiz 🤍
-</p>
-
-
-<button onclick="sayfaDegistir(6)">
-Son mesaj
-</button>
-
-
-</div>
-
-
-
-
-
-<!-- SAYFA 6 -->
-
-
-<div id="sayfa6" class="sayfa">
-
-
-<h1>
-🤍
-</h1>
-
-
-<p>
-
 Her şeye rağmen seni önemsiyorum.
-
 <br><br>
-
-Küçük bir kavga, güzel şeylerimizi unutturmasın.
-
-<br><br>
-
-İyi ki hayatımdasın canımın içi.
-
-<br><br>
-
-Seni seviyorum.
-
+İyi ki hayatımdasın.
 </p>
-
 
 </div>
 
 
-
+</div>
 
 
 <script>
 
+function gec(no){
 
-function sayfaDegistir(no){
+document.querySelectorAll(".sayfa").forEach(function(x){
 
-let sayfalar=document.querySelectorAll(".sayfa");
-
-
-sayfalar.forEach(function(sayfa){
-
-sayfa.classList.remove("aktif");
+x.classList.remove("aktif");
 
 });
 
 
-document.getElementById("sayfa"+no).classList.add("aktif");
-
+document.getElementById("s"+no).classList.add("aktif");
 
 }
-
-
 
 </script>
 
 
-
 </body>
-
 </html>
