@@ -157,77 +157,31 @@ Beni dinlediğin, yanımda olduğun ve bana verdiğin değer için teşekkür ed
 İyi ki varsın. Seni seviyorum. 🤍
 </p>
 
-</div>
-
-
-<script>
-
-function zarf(){
-document.getElementById("muzikSayfa").style.display="none";
-document.getElementById("zarfSayfa").style.display="block";
-}
-
-
-function zarfAc(){
-document.getElementById("zarfSayfa").style.display="none";
-document.getElementById("mesajSayfa").style.display="block";
-}
-
-</script><div id="fotoSayfa" style="display:none;text-align:center;padding:20px;">
+<button onclick="fotolar()">Fotoğraflarımız 📸</button><div id="fotoSayfa" style="display:none;text-align:center;padding:20px;">
 
 <h1>📸 Anılarımız</h1>
 
-<p>
-Buraya bizim güzel anılarımız gelecek 🤍
-</p>
+<p>Bizden kalan güzel anılar 🤍</p>
 
-<div style="font-size:60px;">
-🖼️ 🖼️ 🖼️
+<div style="font-size:70px;">
+📷 🤍 📷
 </div>
 
-<button onclick="son()">Devam et</button>
+<button onclick="kapanis()">Son mesaj</button>
 
 </div>
-
-
-<div id="sonSayfa" style="display:none;text-align:center;padding:25px;">
-
-<h1>🤍</h1>
-
-<p>
-Her şeye rağmen seni önemsiyorum.
-<br><br>
-İyi ki hayatımdasın canımın içi.
-<br><br>
-Seni seviyorum.
-</p>
-
-</div>
-
 
 <script>
-
-</script><button onclick="fotolar()">Fotoğraflara geç 🤍</button> <div id="fotoSayfa" style="display:none;text-align:center;padding:20px;">
-
-<h1>📸 Anılarımız</h1>
-
-<p>
-Buraya bizim güzel anılarımız gelecek 🤍
-</p>
-
-<div style="font-size:60px;">
-🖼️ 🖼️ 🖼️
-</div>
-
-</div>
-
-
-<script>
-
 function fotolar(){
 document.getElementById("mesajSayfa").style.display="none";
 document.getElementById("fotoSayfa").style.display="block";
 }
+
+function kapanis(){
+document.getElementById("fotoSayfa").style.display="none";
+document.getElementById("sonSayfa").style.display="block";
+}
+</script>
 
 </script>
 
