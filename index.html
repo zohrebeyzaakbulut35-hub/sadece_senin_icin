@@ -1,108 +1,255 @@
 <!DOCTYPE html>
 <html lang="tr">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Eren'e Özel 🤍</title>
 
 <style>
+*{
+box-sizing:border-box;
+}
 
 body{
 margin:0;
 height:100vh;
-background:linear-gradient(#ffd6e7,#ffb6d5);
+background:linear-gradient(135deg,#ffd6e7,#ffb6d5);
+font-family:Arial,sans-serif;
+color:#8b3155;
 display:flex;
 justify-content:center;
 align-items:center;
-font-family:Arial,sans-serif;
-text-align:center;
-color:#8b3155;
 overflow:hidden;
 }
 
-
-.kutu{
+.sayfa{
+display:none;
 width:90%;
-max-width:450px;
+max-width:500px;
+text-align:center;
 }
 
+.aktif{
+display:block;
+}
 
 h1{
-font-size:35px;
+font-size:32px;
 }
-
 
 p{
-font-size:20px;
-line-height:1.5;
+font-size:18px;
+line-height:1.6;
 }
-
 
 button{
-background:white;
 border:none;
-padding:15px 35px;
+background:white;
+color:#d45a8a;
+padding:14px 35px;
 border-radius:30px;
 font-size:18px;
-color:#d45a8a;
+margin-top:20px;
+cursor:pointer;
 }
-
 
 .kalp{
 position:absolute;
-font-size:20px;
+font-size:22px;
 }
 
+.k1{left:10%;top:20%}
+.k2{right:10%;top:25%}
+.k3{left:20%;bottom:20%}
+.k4{right:20%;bottom:25%}
+.k5{left:50%;top:10%}
+.k6{left:8%;top:60%}
+.k7{right:8%;top:60%}
+.k8{left:50%;bottom:10%}
+
+.zarf{
+font-size:90px;
+cursor:pointer;
+}
+
+.fotolar img{
+width:120px;
+height:120px;
+object-fit:cover;
+border-radius:20px;
+margin:5px;
+}
 
 </style>
 
 </head>
 
-
 <body>
 
+<div class="kalp k1">♡</div>
+<div class="kalp k2">♡</div>
+<div class="kalp k3">♡</div>
+<div class="kalp k4">♡</div>
+<div class="kalp k5">♡</div>
+<div class="kalp k6">♡</div>
+<div class="kalp k7">♡</div>
+<div class="kalp k8">♡</div>
 
-<div class="kalp" style="left:15%;top:20%">♡</div>
-<div class="kalp" style="left:80%;top:25%">♡</div>
-<div class="kalp" style="left:25%;top:75%">♡</div>
-<div class="kalp" style="left:70%;top:70%">♡</div>
-<div class="kalp" style="left:50%;top:15%">♡</div>
-<div class="kalp" style="left:10%;top:55%">♡</div>
-<div class="kalp" style="left:88%;top:60%">♡</div>
-<div class="kalp" style="left:45%;top:85%">♡</div>
 
+<div id="s1" class="sayfa aktif">
 
-<div class="kutu">
-
-<h1>
-Bebeğim, bunu senin için hazırladım…
-</h1>
-
+<h1>Bebeğim, bunu senin için hazırladım…</h1>
 
 <p>
 Umarım sonuna kadar okursun 🤍
 </p>
 
-
-<button onclick="devamEt()">
+<button onclick="gec(2)">
 Başla
 </button>
 
 </div>
 
+
+<div id="s2" class="sayfa">
+
+<h1>🎧</h1>
+
+<p>
+Önce bunu dinlemeni istiyorum...
+</p>
+
+<iframe
+src="https://open.spotify.com/embed/album/7mTScMsjKzubBs9sTldQN5"
+width="100%"
+height="180"
+frameborder="0">
+</iframe>
+
+<button onclick="gec(3)">
+Devam et 💌
+</button>
+
+</div>
+
+
+<div id="s3" class="sayfa">
+
+<h1>Sana bir şey hazırladım 🤍</h1>
+
+<div class="zarf" onclick="gec(4)">
+💌
+</div>
+
+<p>
+Açmak için dokun
+</p>
+
+</div>
+
+
+<div id="s4" class="sayfa">
+
+<h1>Eren,</h1>
+
+<p>
+
+Bazen istemeden birbirimizi kırabiliyoruz.
+
+<br><br>
+
+Bu yaşadığımız şey için gerçekten üzgünüm.
+Seni üzmek, kırmak ya da kötü hissettirmek hiç istemedim.
+
+<br><br>
+
+Seni önemsiyorum.
+Hatalarımın farkına varıp daha iyi olmaya çalışıyorum.
+
+<br><br>
+
+Aramızdaki güzel şeylerin bir kavgadan daha değerli olduğunu düşünüyorum.
+
+<br><br>
+
+Seni kaybetmek istemiyorum canımın içi.
+
+<br><br>
+
+İyi ki varsın.
+Seni seviyorum 🤍
+
+</p>
+
+<button onclick="gec(5)">
+Fotoğraflarımız 📸
+</button>
+
+</div>
+
+
+<div id="s5" class="sayfa">
+
+<h1>📸 Anılarımız</h1>
+
+<p>
+Fotoğraflarımız burada olacak 🤍
+</p>
+
+<div class="fotolar">
+
+<img src="foto1.jpg">
+<img src="foto2.jpg">
+<img src="foto3.jpg">
+
+</div>
+
+<button onclick="gec(6)">
+Son mesaj
+</button>
+
+</div>
+
+
+<div id="s6" class="sayfa">
+
+<h1>🤍</h1>
+
+<p>
+
+Her şeye rağmen seni önemsiyorum.
+
+<br><br>
+
+İyi ki hayatımdasın.
+
+<br><br>
+
+Seni seviyorum.
+
+</p>
+
+</div>
+
+
+
 <script>
 
-function devamEt(){
+function gec(numara){
 
-alert("Devam ediyoruz 🤍");
+let sayfalar=document.querySelectorAll(".sayfa");
+
+sayfalar.forEach(function(s){
+s.classList.remove("aktif");
+});
+
+document.getElementById("s"+numara).classList.add("aktif");
 
 }
 
 </script>
 
-</body>
 
+</body>
 </html>
