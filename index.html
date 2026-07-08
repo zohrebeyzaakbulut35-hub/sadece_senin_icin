@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Bebeğim 🤍</title>
+
+<style>
+body{
+    margin:0;
+    height:100vh;
+    background:linear-gradient(#ffd6e7,#ffb6d5);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:Arial,sans-serif;
+    overflow:hidden;
+    color:#8b3155;
+}
+
+.kutu{
+    text-align:center;
+    padding:25px;
+}
+
+h1{
+    font-size:34px;
+    font-weight:700;
+}
+
+p{
+    font-size:20px;
+}
+
+button{
+    margin-top:25px;
+    padding:14px 35px;
+    border:none;
+    border-radius:30px;
+    background:#ffffff;
+    color:#d45a8a;
+    font-size:18px;
+}
+
+.kalp{
+    position:absolute;
+    font-size:18px;
+}
+
+.k1{left:15%;top:20%}
+.k2{left:80%;top:25%}
+.k3{left:25%;top:75%}
+.k4{left:70%;top:70%}
+.k5{left:50%;top:15%}
+.k6{left:10%;top:55%}
+.k7{left:88%;top:60%}
+.k8{left:45%;top:85%}
+
+</style>
+</head>
+
+<body>
+
+<div class="kalp k1">♡</div>
+<div class="kalp k2">♡</div>
+<div class="kalp k3">♡</div>
+<div class="kalp k4">♡</div>
+<div class="kalp k5">♡</div>
+<div class="kalp k6">♡</div>
+<div class="kalp k7">♡</div>
+<div class="kalp k8">♡</div>
+
+
+<div class="kutu">
+
+<h1>Bebeğim, bunu senin için hazırladım…</h1>
+
+<p>
+Umarım sonuna kadar okursun 🤍
+</p>
+
+<button onclick="muzik()">Başla</button>
+
+</div>
+<div id="muzikSayfa" style="display:none; text-align:center;">
+
+<h1>🎧 Önce bunu dinlemeni istiyorum...</h1>
+
+<p>
+Belki anlatamadığım şeyleri bu şarkı anlatır 🤍
+</p>
+
+<iframe 
+style="border-radius:12px"
+src="https://open.spotify.com/embed/album/7mTScMsjKzubBs9sTldQN5?utm_source=generator"
+width="100%"
+height="152"
+frameBorder="0"
+allowfullscreen=""
+allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+</iframe>
+
+<button onclick="zarf()">Devam et 💌</button>
+
+</div>
+
+
+<script>
+
+function muzik(){
+document.querySelector(".kutu").style.display="none";
+document.getElementById("muzikSayfa").style.display="block";
+}
+
+</script>
+</body>
+</html><div id="zarfSayfa" style="display:none;text-align:center;">
+
+<h1>💌</h1>
+<p>Zarfı açmak için dokun</p>
+
+<div onclick="zarfAc()" style="
+font-size:80px;
+cursor:pointer;
+">
+✉️
+</div>
+
+</div>
+
+
+<div id="mesajSayfa" style="display:none;text-align:center;padding:25px;">
+
+<h1>🤍</h1>
+
+<p>
+Eren,
+
+<br><br>
+Bazen istemeden birbirimizi kırabiliyoruz. Bu yaşadığımız şey için gerçekten üzgünüm. Seni üzmek, kırmak ya da kötü hissettirmek gerçekten hiç istemedim.
+
+<br><br>
+
+Belki her zaman doğru şekilde anlatamıyorum ama seni önemsiyorum. Sen ne kadar tersini düşünsen de hatalarımın farkına varıp daha iyi olmaya çalışıyorum.
+
+<br><br>
+
+Aramızdaki güzel şeylerin bir kavgadan daha değerli olduğunu düşünüyorum. Seni kaybetmek istemiyorum, canımın içi.
+
+<br><br>
+
+Beni dinlediğin, yanımda olduğun ve bana verdiğin değer için teşekkür ederim.
+
+<br><br>
+
+İyi ki varsın. Seni seviyorum. 🤍
+</p>
+
+</div>
+
+
+<script>
+
+function zarf(){
+document.getElementById("muzikSayfa").style.display="none";
+document.getElementById("zarfSayfa").style.display="block";
+}
+
+
+function zarfAc(){
+document.getElementById("zarfSayfa").style.display="none";
+document.getElementById("mesajSayfa").style.display="block";
+}
+
+</script><div id="fotoSayfa" style="display:none;text-align:center;padding:20px;">
+
+<h1>📸 Anılarımız</h1>
+
+<p>
+Buraya bizim güzel anılarımız gelecek 🤍
+</p>
+
+<div style="font-size:60px;">
+🖼️ 🖼️ 🖼️
+</div>
+
+<button onclick="son()">Devam et</button>
+
+</div>
+
+
+<div id="sonSayfa" style="display:none;text-align:center;padding:25px;">
+
+<h1>🤍</h1>
+
+<p>
+Her şeye rağmen seni önemsiyorum.
+<br><br>
+İyi ki hayatımdasın canımın içi.
+<br><br>
+Seni seviyorum.
+</p>
+
+</div>
+
+
+<script>
+
+function son(){
+
+document.getElementById("fotoSayfa").style.display="none";
+document.getElementById("sonSayfa").style.display="block";
+
+}
+
+</script>
